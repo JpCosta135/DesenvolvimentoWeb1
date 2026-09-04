@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 :root {
     --primary-color: #065A82;
     --accent-color: #B0D4E8;
@@ -10,7 +11,16 @@
     --text-color: #1A1A2E
     
 }
- 
+.dark-theme {
+  --primary-color: #3898C8;
+  --accent-color: #70B2D9;
+  --background-color: #0E141B;
+  --text-color: #E3EDF5;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
  
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
