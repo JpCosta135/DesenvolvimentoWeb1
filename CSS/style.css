@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 :root {
     --primary-color: #065A82;
     --accent-color: #B0D4E8;
@@ -21,7 +20,6 @@
   color: var(--text-color);
   min-height: 100vh;
 }
- 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background-color: var(--background-color);
@@ -76,9 +74,6 @@ html {
     display: flex;
     margin: 0 auto 16px;
     animation: pulse 2s infinite;
-    
-
-    
 }
 .nome{
     color: white;
@@ -139,6 +134,14 @@ html {
     transition: all 0.2s;
 }
 .btn-outline {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14.4px;
+    transition: all 0.2s;
     background-color: transparent;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
@@ -174,9 +177,14 @@ html {
     transform: translateY(-1px);
    
 }
+.btn-outline:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+     
+}
 .tag:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     cursor: pointer;
 }
 @media (max-width: 480px) {
