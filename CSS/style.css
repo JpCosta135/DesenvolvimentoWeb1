@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #0058af;
-    --accent-color: #009fcf;
-    --background-color: rgb(0, 0, 83);
-    --text-color: #f3f1f1;
+    --primary-color: #065A82;
+    --accent-color: #B0D4E8;
+    --background-color: #F0F5F8;
+    --text-color: #1A1A2E
     
 }
+ 
  
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -41,20 +42,7 @@ html {
     padding: 30px;
     text-align: center;
 }
-.avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    color: white;  
-    font-size: 28px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0 auto 16px;
-
-    @keyframes pulse {
+@keyframes pulse {
         0% {
             transform: scale(1);
         }
@@ -64,9 +52,21 @@ html {
         100% {
             transform: scale(1);
         }
-        animation: pulse 2s infinite;
     }
-     
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--accent-color);  
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto 16px;
+    animation: pulse 2s infinite;
+    
 
     
 }
