@@ -1,0 +1,157 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #F0F5F8;
+  color: #1A1A2E;
+}
+/* === CONTAINER === */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.app {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+/* === HEADER === */
+.app-header {
+  background-color: #065A82;
+  padding: 24px;
+  text-align: center;
+}
+.app-header h1 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+.subtitulo {
+  color: #B0D4E8;
+  font-size: 0.9rem;
+}
+#contador {
+  color: #02C39A;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+/* === FORMULARIO === */
+.form-adicionar {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+  border-bottom: 1px solid #E8F0F5;
+}
+#todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #E8F0F5;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1A1A2E;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#todo-input:focus {
+  border-color: #065A82;
+}
+#todo-input::placeholder {
+  color: #B0B8C4;
+}
+.btn-adicionar {
+  padding: 10px 20px;
+  background-color: #065A82;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn-adicionar:hover {
+  background-color: #054A6E;
+}
+.btn-adicionar:active {
+  transform: scale(0.97);
+}
+/* === LISTA DE TAREFAS === */
+.todo-list {
+  list-style: none;
+  padding: 8px 16px;
+  min-height: 60px;
+}
+/* === ITEM DA TAREFA === */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  margin: 6px 0;
+  background-color: #F0F5F8;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.3s;
+  user-select: none;
+}
+.todo-item:hover {
+  background-color: #E4ECF1;
+}
+/* === TAREFA CONCLUIDA === */
+.todo-item.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  background-color: #E8F0F5;
+}
+/* === BOTAO REMOVER === */
+.btn-remover {
+  background: none;
+  border: none;
+  color: #D64045;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.btn-remover:hover {
+  background-color: #D64045;
+  color: #FFFFFF;
+}
+/* === FOOTER === */
+.app-footer {
+  text-align: center;
+  padding: 14px;
+  border-top: 1px solid #E8F0F5;
+}
+.app-footer p {
+  font-size: 0.8rem;
+  color: #B0B8C4;
+}
+/* === RESPONSIVIDADE === */
+@media (max-width: 480px) {
+  .form-adicionar {
+    flex-direction: column;
+  }
+
+  .btn-adicionar {
+    width: 100%;
+  }
+}

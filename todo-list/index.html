@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="app">
+
+      <header class="app-header">
+        <h1>Minhas Tarefas</h1>
+        <p class="subtitulo">
+          <span id="contador">0</span> tarefas pendentes
+        </p>
+      </header>
+
+      <form id="todo-form" class="form-adicionar">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Digite uma nova tarefa..."
+          autocomplete="off"
+        >
+        <button type="submit" class="btn-adicionar">Adicionar</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list">
+        <!-- As tarefas serao adicionadas aqui pelo JavaScript -->
+      </ul>
+
+      <footer class="app-footer">
+        <p>Desenvolvido com HTML, CSS e JavaScript</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
